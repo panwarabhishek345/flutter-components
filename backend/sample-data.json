@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "image_url": "https://picsum.photos/400/600",
+        "name": "Name 1",
+        "likes": 10
+    },
+    {
+        "id": 2,
+        "image_url": "https://picsum.photos/500/500",
+        "name": "Name 2",
+        "likes": 1
+    },
+    {
+        "id": 3,
+        "image_url": "https://picsum.photos/600/300",
+        "name": "Name 3",
+        "likes": 15
+    },
+    {
+        "id": 4,
+        "image_url": "https://picsum.photos/300/600",
+        "name": "Name 4",
+        "likes": 7
+    },
+    {
+        "id": 5,
+        "image_url": "https://picsum.photos/400/600",
+        "name": "Name 5",
+        "likes": 10
+    },
+    {
+        "id": 6,
+        "image_url": "https://picsum.photos/500/500",
+        "name": "Name 6",
+        "likes": 1
+    },
+    {
+        "id": 7,
+        "image_url": "https://picsum.photos/600/300",
+        "name": "Name 7",
+        "likes": 15
+    },
+    {
+        "id": 8,
+        "image_url": "https://picsum.photos/300/600",
+        "name": "Name 8",
+        "likes": 7
+    }
+]

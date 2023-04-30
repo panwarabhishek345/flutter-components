@@ -1,10 +1,29 @@
-<script>
+<!-- <script>
 	import Card from './card.svelte';
 
 	const imageURL =
 		'https://images.unsplash.com/photo-1682258480218-9ec54c988478?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80';
 	const title = 'Example Title';
 	const likeCount = 10;
+</script> -->
+
+<script>
+	import Card from './card.svelte';
+	import { onMount } from 'svelte';
+
+	let components = [];
+
+	async function fetchData() {
+		const res = await fetch('http://localhost:8080/sample-data');
+		const data = await res.json();
+		components = data;
+	}
+
+	async function loadComponents() {
+		const res = await fetchData();
+	}
+
+	onMount(loadComponents);
 </script>
 
 <aside
@@ -188,18 +207,13 @@
 		</ul>
 	</div>
 
-	<div class="w-full columns-4 space-y-4 gap-4">
-		<Card imageURL="https://picsum.photos/400/600" />
-		<Card imageURL="https://picsum.photos/500/500" />
-		<Card imageURL="https://picsum.photos/600/300" />
-		<Card imageURL="https://picsum.photos/300/600" />
-		<Card imageURL="https://picsum.photos/400/600" />
-		<Card imageURL="https://picsum.photos/500/500" />
-		<Card imageURL="https://picsum.photos/600/300" />
-		<Card imageURL="https://picsum.photos/300/600" />
-		<Card imageURL="https://picsum.photos/400/600" />
-		<Card imageURL="https://picsum.photos/500/500" />
-		<Card imageURL="https://picsum.photos/600/300" />
-		<Card imageURL="https://picsum.photos/300/600" />
-	</div>
+	{#if components.length > 0}
+		<div class="w-full columns-4 space-y-4 gap-4">
+			{#each components as component}
+				<Card imageURL={component.image_url} />
+			{/each}
+		</div>
+	{:else}
+		<p>Loading...</p>
+	{/if}
 </div>
