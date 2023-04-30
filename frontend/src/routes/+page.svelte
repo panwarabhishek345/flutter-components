@@ -187,26 +187,19 @@
 			</li>
 		</ul>
 	</div>
-	<div class="grid grid-rows-4 gap-y-8 p-3">
-		<div class="grid grid-cols-4 gap-4">
-			<Card {imageURL} {title} {likeCount} />
-			<Card {imageURL} {title} {likeCount} />
-			<Card {imageURL} {title} {likeCount} />
-			<Card {imageURL} {title} {likeCount} />
-		</div>
 
-		<div class="grid grid-cols-4 gap-4">
-			<Card {imageURL} {title} {likeCount} />
-			<Card {imageURL} {title} {likeCount} />
-			<Card {imageURL} {title} {likeCount} />
-			<Card {imageURL} {title} {likeCount} />
-		</div>
-
-		<div class="grid grid-cols-4 gap-4">
-			<Card {imageURL} {title} {likeCount} />
-			<Card {imageURL} {title} {likeCount} />
-			<Card {imageURL} {title} {likeCount} />
-			<Card {imageURL} {title} {likeCount} />
-		</div>
+	<div class="w-full columns-4 space-y-4 gap-4">
+		<Card imageURL="https://picsum.photos/400/600" />
+		<Card imageURL="https://picsum.photos/500/500" />
+		<Card imageURL="https://picsum.photos/600/300" />
+		<Card imageURL="https://picsum.photos/300/600" />
+		<Card imageURL="https://picsum.photos/400/600" />
+		<Card imageURL="https://picsum.photos/500/500" />
+		<Card imageURL="https://picsum.photos/600/300" />
+		<Card imageURL="https://picsum.photos/300/600" />
+		<Card imageURL="https://picsum.photos/400/600" />
+		<Card imageURL="https://picsum.photos/500/500" />
+		<Card imageURL="https://picsum.photos/600/300" />
+		<Card imageURL="https://picsum.photos/300/600" />
 	</div>
 </div>
