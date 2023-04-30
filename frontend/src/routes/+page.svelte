@@ -1,12 +1,3 @@
-<!-- <script>
-	import Card from './card.svelte';
-
-	const imageURL =
-		'https://images.unsplash.com/photo-1682258480218-9ec54c988478?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80';
-	const title = 'Example Title';
-	const likeCount = 10;
-</script> -->
-
 <script>
 	import Card from './card.svelte';
 	import { onMount } from 'svelte';
@@ -185,22 +176,22 @@
 	<div class="flex flex-row mb-4">
 		<ul>
 			<li
-				class="inline-block mx-2 px-6 py-1 border-2 border-dashed border-gray-800 rounded-full items-center text-gray-800"
+				class="inline-block mx-2 px-6 py-1 border-2 border-dashed border-gray-800 rounded-full items-center text-gray-800 hover:text-white hover:bg-gray-800 transition duration-300 ease-in-out"
 			>
 				Bordered
 			</li>
 			<li
-				class="inline-block mx-2 px-6 py-1 border-2 border-dashed border-gray-800 rounded-full items-center text-gray-800"
+				class="inline-block mx-2 px-6 py-1 border-2 border-dashed border-gray-800 rounded-full items-center text-gray-800 hover:text-white hover:bg-gray-800 transition duration-300 ease-in-out"
 			>
 				Animated
 			</li>
 			<li
-				class="inline-block mx-2 px-6 py-1 border-2 border-dashed border-gray-800 rounded-full items-center text-gray-800"
+				class="inline-block mx-2 px-6 py-1 border-2 border-dashed border-gray-800 rounded-full items-center text-gray-800 hover:text-white hover:bg-gray-800 transition duration-300 ease-in-out"
 			>
 				Colorful
 			</li>
 			<li
-				class="inline-block mx-2 px-6 py-1 border-2 border-dashed border-gray-800 rounded-full items-center text-gray-800"
+				class="inline-block mx-2 px-6 py-1 border-2 border-dashed border-gray-800 rounded-full items-center text-gray-800 hover:text-white hover:bg-gray-800 transition duration-300 ease-in-out"
 			>
 				Monochrome
 			</li>
