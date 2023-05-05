@@ -2,6 +2,7 @@
 	import Card from './card.svelte';
 	import { onMount } from 'svelte';
 
+
 	let components = [];
 
 	async function fetchData() {
@@ -176,22 +177,22 @@
 	<div class="flex flex-row mb-4">
 		<ul>
 			<li
-				class="inline-block mx-2 px-6 py-1 border-2 border-dashed border-gray-800 rounded-full items-center text-gray-800 hover:text-white hover:bg-gray-800 transition duration-300 ease-in-out"
+				class="inline-block mx-2 px-6 py-1 border-2 border-dashed border-gray-800 rounded-full items-center text-gray-800 hover:text-white hover:bg-gray-800 cursor-pointer"
 			>
 				Bordered
 			</li>
 			<li
-				class="inline-block mx-2 px-6 py-1 border-2 border-dashed border-gray-800 rounded-full items-center text-gray-800 hover:text-white hover:bg-gray-800 transition duration-300 ease-in-out"
+				class="inline-block mx-2 px-6 py-1 border-2 border-dashed border-gray-800 rounded-full items-center text-gray-800 hover:text-white hover:bg-gray-800 cursor-pointer"
 			>
 				Animated
 			</li>
 			<li
-				class="inline-block mx-2 px-6 py-1 border-2 border-dashed border-gray-800 rounded-full items-center text-gray-800 hover:text-white hover:bg-gray-800 transition duration-300 ease-in-out"
+				class="inline-block mx-2 px-6 py-1 border-2 border-dashed border-gray-800 rounded-full items-center text-gray-800 hover:text-white hover:bg-gray-800 cursor-pointer"
 			>
 				Colorful
 			</li>
 			<li
-				class="inline-block mx-2 px-6 py-1 border-2 border-dashed border-gray-800 rounded-full items-center text-gray-800 hover:text-white hover:bg-gray-800 transition duration-300 ease-in-out"
+				class="inline-block mx-2 px-6 py-1 border-2 border-dashed border-gray-800 rounded-full items-center text-gray-800 hover:text-white hover:bg-gray-800 cursor-pointer"
 			>
 				Monochrome
 			</li>
